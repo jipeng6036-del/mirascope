@@ -1,0 +1,19 @@
+{
+  "name": "linux312-extra-imports-final",
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work/python",
+    "resume-20261026-ai-mirascope312",
+    "uv",
+    "run",
+    "--no-sync",
+    "bash",
+    "scripts/validate_extra_imports.sh"
+  ],
+  "cwd": "<checkout>",
+  "exit_code": 0,
+  "elapsed": 79.87067556381226,
+  "observed_at": "2026-10-26T17:47:05.403469+00:00"
+}

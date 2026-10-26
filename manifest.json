@@ -1,0 +1,264 @@
+{
+  "product_head": "52e18284e3e1cf7312f72ebfeb969a2eadc811ce",
+  "product_tree": "e01413119210abdf190aab7eff963dc30772c83c",
+  "base": "27631eb4e1a7da4736e9ba1c9f9e5a6b42b77c94",
+  "package_version": "2.8.2",
+  "wheel_sha256": "63ceb7d0a86b3106a1c79fec7f7cb8360b2628320c9d93b95ceeeb4725fed44d",
+  "allowlist": [
+    "final-source-binding.json",
+    "source-manifest.json",
+    "gate-scope.json",
+    "creation-red-40-final.log",
+    "retries-green.log",
+    "linux310-raw-full.log",
+    "linux311-raw-full.log",
+    "linux312-raw-full.log",
+    "linux313-raw-full.log",
+    "linux310-raw-result.json",
+    "linux311-raw-result.json",
+    "linux312-raw-result.json",
+    "linux313-raw-result.json",
+    "linux312-lock-final.log",
+    "linux312-lock-final.json",
+    "linux312-ruff-final.log",
+    "linux312-ruff-final.json",
+    "linux312-format-final.log",
+    "linux312-format-final.json",
+    "linux312-pyright-final.log",
+    "linux312-pyright-final.json",
+    "linux312-extra-imports-final.log",
+    "linux312-extra-imports-final.json",
+    "linux312-generated-types-final.log",
+    "root-typecheck.log",
+    "root-lint-oxlint.log",
+    "root-test-coverage.log",
+    "codespell.log",
+    "commit-hooks.log",
+    "canonical-wheel-build.log",
+    "canonical-wheel-install.log",
+    "canonical-wheel-runtime.log",
+    "canonical-wheel-runtime.json",
+    "runtime-baseline-raw.log",
+    "runtime-baseline-raw.json",
+    "runtime_http.py",
+    "linux312-coverage.xml",
+    "docs-codespell.log",
+    "docs-mdx-compile.log",
+    "docs-commit-hooks.log",
+    "docs-format-canonical.json",
+    "docs-scope-final.json"
+  ],
+  "sanitization": "Replace local user/workspace/Python/Node paths; normalize text LF; no other projects or nonallowlisted files included.",
+  "files": {
+    "final-source-binding.json": {
+      "original_sha256": "406a2a4fc555fbd28fa43daca6869af56d55342f1a198d23b9afd3f2b82b885f",
+      "published_sha256": "0511254508f021f4bdfa2036df3462177373dfac1876da8b84b8a70ca05fbf04",
+      "size": 1556
+    },
+    "source-manifest.json": {
+      "original_sha256": "5f02a3d93d672b49485cf7459d0df49308e95aea68eb934bc0d351bea8dacc16",
+      "published_sha256": "feeda3bf714ea99151b0644f2509844c1eebb369cdb8c79fd6ac3f8b4554cbc0",
+      "size": 803
+    },
+    "gate-scope.json": {
+      "original_sha256": "9eb017f62bbd58d9c57d5153a27e99bdfff60bc5ccc678033f52edf5a63b205c",
+      "published_sha256": "ac3ca74a740e411ace6824e434d34e8d9b6fb9769a269fbe5baf025dda4823ae",
+      "size": 3186
+    },
+    "creation-red-40-final.log": {
+      "original_sha256": "251939326e3b55248e64a0aefba27c387bbd6f94b9108be3ab8a3bfb17dfa1d5",
+      "published_sha256": "da4868890aecfa5340ba9fc6e28d85d888e8ffb25236bf07939f2c0a8e9ca9bf",
+      "size": 1895160
+    },
+    "retries-green.log": {
+      "original_sha256": "21a02b06d68f195cbb63c8242b3b4de82b2c4f01b49817852310c45f8d7fa12c",
+      "published_sha256": "ec54df31edb2ea1e43633c4568f8aee8320076a8518a573435dd908381efa127",
+      "size": 261
+    },
+    "linux310-raw-full.log": {
+      "original_sha256": "a7f15c06a0182d6b76a6b4bfaab499066c3a3a2b01b885a6e371fed01a464f15",
+      "published_sha256": "a7f15c06a0182d6b76a6b4bfaab499066c3a3a2b01b885a6e371fed01a464f15",
+      "size": 44209
+    },
+    "linux311-raw-full.log": {
+      "original_sha256": "d49e35265f2941ba7c41ef41e9dd579742b6b7cd182c607a2d07a2260cbdb25a",
+      "published_sha256": "d49e35265f2941ba7c41ef41e9dd579742b6b7cd182c607a2d07a2260cbdb25a",
+      "size": 44217
+    },
+    "linux312-raw-full.log": {
+      "original_sha256": "c4ce5a1f1d991ca98b5f88ecfbccb1414ec4271edff48d56f57fe71440a996c2",
+      "published_sha256": "c4ce5a1f1d991ca98b5f88ecfbccb1414ec4271edff48d56f57fe71440a996c2",
+      "size": 44217
+    },
+    "linux313-raw-full.log": {
+      "original_sha256": "4eeb10c13720cfe3ad29f474a44428f328d3000cb4062e4e2c45f5c05aa0a59e",
+      "published_sha256": "4eeb10c13720cfe3ad29f474a44428f328d3000cb4062e4e2c45f5c05aa0a59e",
+      "size": 44217
+    },
+    "linux310-raw-result.json": {
+      "original_sha256": "9c75443be879a745e587c18ba226657f196b7eac44d204e4b48f98a8b76bb6fc",
+      "published_sha256": "f3f0a3fd59b5559de2becfdaad75354233012cecf85cbde2526874e4a3d42998",
+      "size": 1600
+    },
+    "linux311-raw-result.json": {
+      "original_sha256": "c6d91cb37c397e84cb2aecb684c409787ccabe1aa315e99a33dab4ffe3a61318",
+      "published_sha256": "c82ec7b27fdec098f161614c18b28c4aaf4a79143467323a49ac1ba3f52425a9",
+      "size": 1602
+    },
+    "linux312-raw-result.json": {
+      "original_sha256": "f040e1e6ade8d810723fb675a2b0b22d954fddce39758b9664edcf21e7d1c4a4",
+      "published_sha256": "b484a827222e71a8a97100ef32039275606efef7dc3364a6bb49e4acb62dfa55",
+      "size": 1602
+    },
+    "linux313-raw-result.json": {
+      "original_sha256": "7593208f353838f8922ffe89d9b17d4a25b879c5aec063f259b94d69e7cbb91d",
+      "published_sha256": "9579acbaa4076b98c9d303be481c5acd9dbf0021e0750e8445120c9d60e7855b",
+      "size": 1601
+    },
+    "linux312-lock-final.log": {
+      "original_sha256": "d44e5ce921c49cbb09a49fdd3463e7b031e91b4a3b6ea5466c2b18866c5e21dc",
+      "published_sha256": "d44e5ce921c49cbb09a49fdd3463e7b031e91b4a3b6ea5466c2b18866c5e21dc",
+      "size": 29
+    },
+    "linux312-lock-final.json": {
+      "original_sha256": "b274296db9ea724f97e463dae0103f2371bf429d3ad37ce13eedc6879bcbdbdc",
+      "published_sha256": "abcb7b4c5af8822df19d9c28763fb9e745c1f7202e55e2f03a30802f16f55da8",
+      "size": 313
+    },
+    "linux312-ruff-final.log": {
+      "original_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "published_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "size": 19
+    },
+    "linux312-ruff-final.json": {
+      "original_sha256": "32bdafa382fbbd3f23a7e4a79398ac2567b8061e3e2c2ff414378731e9f84371",
+      "published_sha256": "8a8b33a3504cab89f7522b875fefd9b41c214aa6cee3c6763d9226db482823ba",
+      "size": 349
+    },
+    "linux312-format-final.log": {
+      "original_sha256": "1268214dbcc72ff4c4f4c5ad180f5c30bf93d1a7c7681ddd28aee97c975c23cd",
+      "published_sha256": "1268214dbcc72ff4c4f4c5ad180f5c30bf93d1a7c7681ddd28aee97c975c23cd",
+      "size": 28
+    },
+    "linux312-format-final.json": {
+      "original_sha256": "5aaf7873f84831bf90888c3373845c7db6ece4609a3990b5ea1022271b47bb91",
+      "published_sha256": "1785514f0486f6e9cdd06140c95d4abe660db412184717c5bc94d30f044d6342",
+      "size": 367
+    },
+    "linux312-pyright-final.log": {
+      "original_sha256": "8f371db3392a7e1dd25f9d48cc21c7d773bad778ed7d46a151392ac0e4333c0d",
+      "published_sha256": "8f371db3392a7e1dd25f9d48cc21c7d773bad778ed7d46a151392ac0e4333c0d",
+      "size": 1109
+    },
+    "linux312-pyright-final.json": {
+      "original_sha256": "a8c22d1810f02ae1f23b98fa4a3e2619c9637d24dc2ffed94942cdcf7bf19b55",
+      "published_sha256": "d77225bc391b012f61e14990c71057646b7bf047d68e42412b910a642fcc0b16",
+      "size": 340
+    },
+    "linux312-extra-imports-final.log": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "linux312-extra-imports-final.json": {
+      "original_sha256": "3564e18fc19994f917485ca592ee49c199f1dd6ae893f73536331082a96a6e91",
+      "published_sha256": "3df71d3fbb42bac145041b09e3fae180157edd2a5fb0ac91a9dc7086938d06f4",
+      "size": 375
+    },
+    "linux312-generated-types-final.log": {
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "root-typecheck.log": {
+      "original_sha256": "5332fad17bd103aebbdc63e8e004a0e739af389330acfae18162802a6b5991d8",
+      "published_sha256": "2cb654bd623d50840e060fd2920732af3d50a9ea52633d71fa7c875f99a914bb",
+      "size": 1401
+    },
+    "root-lint-oxlint.log": {
+      "original_sha256": "8f7c3a0e216b2553706d8dd9988ff3726b0a75d0332ebc230b67084948b34bd6",
+      "published_sha256": "2f8a9fe54c4a557a4ac2673cfa394e6c0a662b32dd33015673c2f53d21849773",
+      "size": 38
+    },
+    "root-test-coverage.log": {
+      "original_sha256": "deb22e1adc5929621028994450be25dc453822daa0a386b90ea68dbdea6a3e2e",
+      "published_sha256": "b61329e820904491b35ad008280b7b8c7f467af2508763fb8a8b7f1c76452c17",
+      "size": 40
+    },
+    "codespell.log": {
+      "original_sha256": "2225fe56ff6d522f0c360b4b61c4bdd60a65d4107466df67a96f4f608f642f07",
+      "published_sha256": "78805037c205c2a1ba3932a6b8c4a4012d9c5fe193ad7fb60ced93f8067c0f48",
+      "size": 66
+    },
+    "commit-hooks.log": {
+      "original_sha256": "fc3304a653a4fb0ae5388ec4c47ffa82c97a7eb8141bcd672a42de462a70549e",
+      "published_sha256": "2a6da93806e8b426796b871bf56379e54e5ce567e25324326ed8fba77eeb4535",
+      "size": 987
+    },
+    "canonical-wheel-build.log": {
+      "original_sha256": "efdbea5554a052a67f9419b68879c7e5ae9023723c881ffb3c6c56d500a16e48",
+      "published_sha256": "9ee47edf79dc6dfa109c8297d2eea9008658a3f1a3a8a70df2681818bb81c4fa",
+      "size": 90
+    },
+    "canonical-wheel-install.log": {
+      "original_sha256": "98fdf4c92dc50297cacb9607d0c16b30cff77a5abcc33615e560c9c41d6945fd",
+      "published_sha256": "856292fc5a6c8734f9e2dc551fe039d1041fb4b4994fd96e91c5dcf1cf70f0dc",
+      "size": 549
+    },
+    "canonical-wheel-runtime.log": {
+      "original_sha256": "7adf886ae3cf9353abe96c795dc8fc0fd191aba561b1357b054cdc0ebda1cedf",
+      "published_sha256": "e4b33efad4978c9f548337db2bdeb91c17f6634077053dda115174906e3f0a80",
+      "size": 3552
+    },
+    "canonical-wheel-runtime.json": {
+      "original_sha256": "1e3c9cba36445d3813f2ef5fcaa67094af86534d8f1a3dce4e72cd005c6d1e26",
+      "published_sha256": "1e3c9cba36445d3813f2ef5fcaa67094af86534d8f1a3dce4e72cd005c6d1e26",
+      "size": 6325
+    },
+    "runtime-baseline-raw.log": {
+      "original_sha256": "6dd07ca1118efacdb2a8b046dc53112a10819857e34671961fcd8c6503f7a2c1",
+      "published_sha256": "68d0996b61b1eb060d3c77b8987c79c02cdfbc9994c892676089ca5f5b2266c5",
+      "size": 2664
+    },
+    "runtime-baseline-raw.json": {
+      "original_sha256": "e8dcbec888e1b81b5e6057d89d41ff3eaf9e24b2692f667414c57c7a23e66d3b",
+      "published_sha256": "8f759eec68dac10e48c58dda978f147c309ccc23bbea0dfed70cbba3e69d1685",
+      "size": 4800
+    },
+    "runtime_http.py": {
+      "original_sha256": "a855029dfc82aa73a20cd54db14811f04c3b43e3108853fbfccbdd50130ba102",
+      "published_sha256": "bc6f76a8bcf5a1405dd17d29484762d8edcf08a05ea0f62dbedb4e747821d9c2",
+      "size": 5697
+    },
+    "linux312-coverage.xml": {
+      "original_sha256": "89cf9c3080e3811fac6326b649e1a65f2c64a955a4a0a3cdaf56b82d18b1a70e",
+      "published_sha256": "89cf9c3080e3811fac6326b649e1a65f2c64a955a4a0a3cdaf56b82d18b1a70e",
+      "size": 362854
+    },
+    "docs-codespell.log": {
+      "original_sha256": "dbcd321c0d04a99dd7a31777412032aa292aad6575f52e40f26cceb6fc185b19",
+      "published_sha256": "df7ea9ec0213d9ab310f8b08eea142fde1449f73b18609643998e892c11c8d2b",
+      "size": 38
+    },
+    "docs-mdx-compile.log": {
+      "original_sha256": "a41d0eb9331ce05ed49e6392e92603ae7d2a17726700f5aeb74383b9370f3982",
+      "published_sha256": "a0136d2f50dc4bea27e3bef90b80e82ecc4d67e286a04322fefa6fbccf4b4ba9",
+      "size": 38
+    },
+    "docs-commit-hooks.log": {
+      "original_sha256": "f69e50fc9853ca89b470147a805b8c381f55dc395a29f01a82d5714f8c4ca097",
+      "published_sha256": "a2b6bad1e3c5f15fcd50c0d8a69a9e57e45ac8ef601238688165eeac6cb336f8",
+      "size": 167
+    },
+    "docs-format-canonical.json": {
+      "original_sha256": "6ff9806ca9e1aea5c51a58e339dec860cf0fa14cbe30fc415ca47cafda4b4686",
+      "published_sha256": "5d7f669c14251e1826de2b269e80024457f234acc5e060640429db5f3bc99e97",
+      "size": 10094
+    },
+    "docs-scope-final.json": {
+      "original_sha256": "cbad7fd57e298072897a038517e95faea20171fa1dcfa0801cace02e108f6ea3",
+      "published_sha256": "ece889e80169b078c19547839d2a14ab975e536ee3d15dbe6a43221602d3af21",
+      "size": 1074
+    }
+  }
+}

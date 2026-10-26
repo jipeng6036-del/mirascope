@@ -1,0 +1,459 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.17, pytest-9.0.2, pluggy-1.6.0
+rootdir: /work/python
+configfile: pyproject.toml
+plugins: vcr-1.0.2, anyio-4.12.1, cov-7.0.0, pytest_httpserver-1.1.3, asyncio-1.3.0, typeguard-4.4.4, inline-snapshot-0.31.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 2690 items
+
+tests/e2e/input/test_authentication_error.py ..........                  [  0%]
+tests/e2e/input/test_caching.py ....................                     [  1%]
+tests/e2e/input/test_call_with_audio.py ......                           [  1%]
+tests/e2e/input/test_call_with_document.py ......                        [  1%]
+tests/e2e/input/test_call_with_image.py ................................ [  2%]
+....                                                                     [  2%]
+tests/e2e/input/test_call_with_mcp_tools.py .                            [  2%]
+tests/e2e/input/test_call_with_params.py ........                        [  3%]
+tests/e2e/input/test_call_with_parse_error.py .....                      [  3%]
+tests/e2e/input/test_call_with_strict_tool_and_optional_properties.py .. [  3%]
+....                                                                     [  3%]
+tests/e2e/input/test_call_with_text_encoded_thoughts.py .....            [  3%]
+tests/e2e/input/test_call_with_tool_error.py .....                       [  4%]
+tests/e2e/input/test_empty_call.py ...............                       [  4%]
+tests/e2e/input/test_mirascope_provider.py ...........                   [  4%]
+tests/e2e/input/test_model_not_found.py ..........                       [  5%]
+tests/e2e/input/test_openai_compatibility_providers.py ..........        [  5%]
+tests/e2e/input/test_provider_overriding.py .......                      [  5%]
+tests/e2e/input/test_resume_with_override.py .....                       [  6%]
+tests/e2e/input/test_resume_with_override_thinking_and_tools.py .....    [  6%]
+tests/e2e/input/test_strict_structured_output_compatibility.py ......... [  6%]
+......                                                                   [  6%]
+tests/e2e/input/test_structured_output_parser.py .                       [  6%]
+tests/e2e/input/test_structured_output_primitive_types.py ..             [  7%]
+tests/e2e/input/test_structured_output_resume.py ....................... [  7%]
+.................................................                        [  9%]
+tests/e2e/input/test_structured_output_streaming.py ..                   [  9%]
+tests/e2e/input/test_structured_output_with_formatting_instructions.py . [  9%]
+.......................                                                  [ 10%]
+tests/e2e/input/test_unsupported_provider_tool.py .....                  [ 10%]
+tests/e2e/input/test_web_search_tool.py ..........                       [ 11%]
+tests/e2e/output/test_call.py ........................................   [ 12%]
+tests/e2e/output/test_call_with_thinking.py ............................ [ 13%]
+....                                                                     [ 13%]
+tests/e2e/output/test_call_with_tools.py ............................... [ 15%]
+.........                                                                [ 15%]
+tests/e2e/output/test_max_tokens.py ........................             [ 16%]
+tests/e2e/output/test_prompt.py ........................................ [ 17%]
+                                                                         [ 17%]
+tests/e2e/output/test_refusal.py ....................                    [ 18%]
+tests/e2e/output/test_structured_output.py ............................. [ 19%]
+........................................................................ [ 22%]
+........................................................................ [ 24%]
+...................                                                      [ 25%]
+tests/e2e/output/test_structured_output_with_tools.py .................. [ 26%]
+........................................................................ [ 28%]
+........................................................................ [ 31%]
+..............................                                           [ 32%]
+tests/e2e/output/test_structured_output_with_validation_retry.py ....... [ 33%]
+.........................................                                [ 34%]
+tests/llm/calls/test_call_decorator.py ....                              [ 34%]
+tests/llm/content/test_audio_content.py ................................ [ 35%]
+...........                                                              [ 36%]
+tests/llm/content/test_document_content.py ...........................   [ 37%]
+tests/llm/content/test_image_content.py ................................ [ 38%]
+.....................                                                    [ 39%]
+tests/llm/context/test_context.py .                                      [ 39%]
+tests/llm/context/test_context_utils.py ...........                      [ 39%]
+tests/llm/formatting/test_format.py ...............                      [ 40%]
+tests/llm/formatting/test_output_parser.py .......                       [ 40%]
+tests/llm/formatting/test_partial.py ........                            [ 40%]
+tests/llm/formatting/test_primitive_types.py .........................   [ 41%]
+tests/llm/mcp/test_mcp_client.py ...............sss                      [ 42%]
+tests/llm/messages/test_messages.py ............                         [ 42%]
+tests/llm/models/test_model.py ........                                  [ 43%]
+tests/llm/prompts/test_prompt_decorator.py .....                         [ 43%]
+tests/llm/providers/anthropic/test_anthropic_beta_provider.py .......... [ 43%]
+........................................................................ [ 46%]
+                                                                         [ 46%]
+tests/llm/providers/anthropic/test_anthropic_encoding.py ............... [ 46%]
+..................                                                       [ 47%]
+tests/llm/providers/anthropic/test_anthropic_provider.py .........       [ 47%]
+tests/llm/providers/anthropic/test_anthropic_redacted_thinking.py ....   [ 48%]
+tests/llm/providers/base/test_base_provider.py ..........                [ 48%]
+tests/llm/providers/base/test_params.py ..                               [ 48%]
+tests/llm/providers/base/test_utils.py ..........................        [ 49%]
+tests/llm/providers/google/test_google_encoding.py ............          [ 50%]
+tests/llm/providers/google/test_google_provider.py ..................... [ 50%]
+....                                                                     [ 50%]
+tests/llm/providers/google/test_google_tool_use_prompt_tokens.py ...     [ 51%]
+tests/llm/providers/openai/test_completions_encoding.py .............    [ 51%]
+tests/llm/providers/openai/test_completions_provider.py ...............  [ 52%]
+tests/llm/providers/openai/test_completions_unindexed_tool_calls.py ...  [ 52%]
+tests/llm/providers/openai/test_openai_provider.py ......                [ 52%]
+tests/llm/providers/openai/test_responses_encoding.py ........           [ 52%]
+tests/llm/providers/openai/test_responses_failed_stream.py ..            [ 52%]
+tests/llm/providers/openai/test_responses_incomplete_stream.py .         [ 52%]
+tests/llm/providers/openai/test_responses_provider.py .....              [ 53%]
+tests/llm/providers/test_api_route_provider.py ......................... [ 53%]
+.........                                                                [ 54%]
+tests/llm/providers/test_atlascloud_provider.py ...........              [ 54%]
+tests/llm/providers/test_cheaperinference_provider.py ...........        [ 55%]
+tests/llm/providers/test_finish_reason_mapping.py ........               [ 55%]
+tests/llm/providers/test_minimax_provider.py .......................     [ 56%]
+tests/llm/providers/test_mirascope_provider.py ......................... [ 57%]
+......                                                                   [ 57%]
+tests/llm/providers/test_missing_dependencies.py ....................... [ 58%]
+...........                                                              [ 58%]
+tests/llm/providers/test_ollama_provider.py .......                      [ 58%]
+tests/llm/providers/test_openai_compatible_provider.py ...               [ 59%]
+tests/llm/providers/test_openrouter_provider.py ..........               [ 59%]
+tests/llm/providers/test_provider_registry.py ....................       [ 60%]
+tests/llm/providers/test_providers.py ...s......                         [ 60%]
+tests/llm/providers/test_requesty_provider.py ...........                [ 60%]
+tests/llm/providers/test_together_provider.py ....                       [ 61%]
+tests/llm/providers/test_xai_provider.py ......                          [ 61%]
+tests/llm/responses/test_response.py ................................... [ 62%]
+....................                                                     [ 63%]
+tests/llm/responses/test_stream_response.py ............................ [ 64%]
+........................................................................ [ 67%]
+..........................                                               [ 68%]
+tests/llm/responses/test_structured_stream.py ..................         [ 68%]
+tests/llm/responses/test_utils.py ......................                 [ 69%]
+tests/llm/retries/test_context_retry_responses.py ................       [ 70%]
+tests/llm/retries/test_context_retry_stream_responses.py ............... [ 70%]
+.....                                                                    [ 70%]
+tests/llm/retries/test_model_context_retry.py ...............            [ 71%]
+tests/llm/retries/test_retry_calls.py ...................                [ 72%]
+tests/llm/retries/test_retry_config.py ......                            [ 72%]
+tests/llm/retries/test_retry_decorator.py .........                      [ 72%]
+tests/llm/retries/test_retry_fallback.py ............                    [ 73%]
+tests/llm/retries/test_retry_models.py ............                      [ 73%]
+tests/llm/retries/test_retry_prompts.py ....                             [ 73%]
+tests/llm/retries/test_retry_responses.py ...........                    [ 74%]
+tests/llm/retries/test_retry_stream_responses.py ....................... [ 74%]
+................                                                         [ 75%]
+tests/llm/retries/test_retry_utils.py ....                               [ 75%]
+tests/llm/retries/test_retry_validate.py ....                            [ 75%]
+tests/llm/retries/test_stream_creation.py .............................. [ 76%]
+..........                                                               [ 77%]
+tests/llm/test_error_wrapping.py .......                                 [ 77%]
+tests/llm/tools/test_decorator.py ...................................... [ 79%]
+.............                                                            [ 79%]
+tests/llm/tools/test_tool_schema.py ...........................          [ 80%]
+tests/llm/tools/test_toolkit.py .....................                    [ 81%]
+tests/llm/tools/test_typed_arguments.py ................................ [ 82%]
+.....................                                                    [ 83%]
+tests/ops/_internal/instrumentation/llm/test_common.py ......            [ 83%]
+tests/ops/_internal/instrumentation/llm/test_cost_calculation.py ....... [ 83%]
+..                                                                       [ 83%]
+tests/ops/_internal/instrumentation/llm/test_finish_reason_mapping.py .. [ 83%]
+...                                                                      [ 84%]
+tests/ops/_internal/instrumentation/llm/test_instrumentation.py .....    [ 84%]
+tests/ops/_internal/instrumentation/llm/test_model_call.py ............. [ 84%]
+....                                                                     [ 84%]
+tests/ops/_internal/instrumentation/llm/test_model_call_async.py ..      [ 84%]
+tests/ops/_internal/instrumentation/llm/test_model_context_call.py .     [ 84%]
+tests/ops/_internal/instrumentation/llm/test_model_context_call_async.py . [ 84%]
+                                                                         [ 84%]
+tests/ops/_internal/instrumentation/llm/test_model_context_stream.py ... [ 85%]
+                                                                         [ 85%]
+tests/ops/_internal/instrumentation/llm/test_model_context_stream_async.py . [ 85%]
+...                                                                      [ 85%]
+tests/ops/_internal/instrumentation/llm/test_model_resume.py ........... [ 85%]
+.....                                                                    [ 85%]
+tests/ops/_internal/instrumentation/llm/test_model_stream.py ..........  [ 86%]
+tests/ops/_internal/instrumentation/llm/test_model_stream_async.py ..... [ 86%]
+                                                                         [ 86%]
+tests/ops/_internal/instrumentation/llm/test_response.py ........        [ 86%]
+tests/ops/_internal/instrumentation/llm/test_serialize.py .............. [ 87%]
+..............                                                           [ 87%]
+tests/ops/_internal/instrumentation/providers/test_anthropic.py ........ [ 88%]
+..                                                                       [ 88%]
+tests/ops/_internal/instrumentation/providers/test_google_genai.py ..... [ 88%]
+.....                                                                    [ 88%]
+tests/ops/_internal/instrumentation/providers/test_openai.py ..........  [ 88%]
+tests/ops/_internal/test_closure.py .................................... [ 90%]
+............s......................                                      [ 91%]
+tests/ops/_internal/test_configuration.py ........                       [ 91%]
+tests/ops/_internal/test_context.py ....................                 [ 92%]
+tests/ops/_internal/test_metadata_preservation.py .................      [ 93%]
+tests/ops/_internal/test_missing_dependencies.py ....                    [ 93%]
+tests/ops/_internal/test_propagation.py ................................ [ 94%]
+....                                                                     [ 94%]
+tests/ops/_internal/test_session.py ....................                 [ 95%]
+tests/ops/_internal/test_span.py ..................                      [ 96%]
+tests/ops/_internal/test_tracing.py .................................... [ 97%]
+..............                                                           [ 97%]
+tests/ops/_internal/test_versioning.py ................................. [ 99%]
+......................                                                   [ 99%]
+tests/test_imports.py .                                                  [100%]
+
+=============================== warnings summary ===============================
+scripts/model_features/core/models.py:10
+  /work/python/scripts/model_features/core/models.py:10: PytestCollectionWarning: cannot collect test class 'TestStatus' because it has a __init__ constructor (from: scripts/model_features/test_anthropic.py)
+    class TestStatus(str, Enum):
+
+scripts/model_features/core/models.py:10
+  /work/python/scripts/model_features/core/models.py:10: PytestCollectionWarning: cannot collect test class 'TestStatus' because it has a __init__ constructor (from: scripts/model_features/test_google.py)
+    class TestStatus(str, Enum):
+
+scripts/model_features/core/models.py:10
+  /work/python/scripts/model_features/core/models.py:10: PytestCollectionWarning: cannot collect test class 'TestStatus' because it has a __init__ constructor (from: scripts/model_features/test_openai.py)
+    class TestStatus(str, Enum):
+
+tests/e2e/input/test_strict_structured_output_compatibility.py::test_strict_mode[anthropic/claude-sonnet-4-5]
+tests/e2e/input/test_strict_structured_output_compatibility.py::test_strict_mode_with_thinking[anthropic/claude-sonnet-4-5]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+    PydanticSerializationUnexpectedValue(Expected `none` - serialized value may not be as expected [field_name='parsed_output', input_value=IntegerAdditionResponse(i..., integer_b=2, answer=4), input_type=IntegerAdditionResponse])
+    return self.__pydantic_serializer__.to_python(
+
+tests/e2e/input/test_strict_structured_output_compatibility.py::test_strict_mode_with_tools[anthropic/claude-sonnet-4-5]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+    PydanticSerializationUnexpectedValue(Expected `none` - serialized value may not be as expected [field_name='parsed_output', input_value=IntegerAdditionResponse(i... integer_b=3, answer=13), input_type=IntegerAdditionResponse])
+    return self.__pydantic_serializer__.to_python(
+
+tests/e2e/input/test_structured_output_resume.py::test_structured_output_resume[strict-anthropic/claude-sonnet-4-5]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+    PydanticSerializationUnexpectedValue(Expected `none` - serialized value may not be as expected [field_name='parsed_output', input_value=intOutput(output=7), input_type=intOutput])
+    return self.__pydantic_serializer__.to_python(
+
+tests/e2e/input/test_structured_output_resume.py::test_structured_output_resume[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/input/test_structured_output_resume.py::test_structured_output_resume_cross_model[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/input/test_structured_output_resume.py::test_structured_output_resume_cross_model[None-anthropic/claude-sonnet-4-5]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+    PydanticSerializationUnexpectedValue(Expected `none` - serialized value may not be as expected [field_name='parsed_output', input_value=intOutput(output=3), input_type=intOutput])
+    return self.__pydantic_serializer__.to_python(
+
+tests/e2e/input/test_structured_output_with_formatting_instructions.py::test_structured_output_with_formatting_instructions[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/input/test_structured_output_with_formatting_instructions.py::test_structured_output_with_formatting_instructions[None-anthropic/claude-sonnet-4-5]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+    PydanticSerializationUnexpectedValue(Expected `none` - serialized value may not be as expected [field_name='parsed_output', input_value=Book(title='THE NAME OF T...ick Rothfuss', rating=7), input_type=Book])
+    return self.__pydantic_serializer__.to_python(
+
+tests/e2e/output/test_structured_output.py::test_structured_output_sync[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output.py::test_structured_output_sync[None-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output.py::test_structured_output_sync_context[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output.py::test_structured_output_sync_context[None-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output.py::test_structured_output_async[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output.py::test_structured_output_async[None-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output.py::test_structured_output_async_context[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output.py::test_structured_output_async_context[None-anthropic/claude-sonnet-4-5]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+    PydanticSerializationUnexpectedValue(Expected `none` - serialized value may not be as expected [field_name='parsed_output', input_value=Book(title='THE NAME OF T...e='Rothfuss'), rating=7), input_type=Book])
+    return self.__pydantic_serializer__.to_python(
+
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_sync[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_sync[None-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_sync_context[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_sync_context[None-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_async[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_async[None-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_async_context[strict-anthropic/claude-sonnet-4-5]
+tests/e2e/output/test_structured_output_with_tools.py::test_structured_output_with_tools_async_context[None-anthropic/claude-sonnet-4-5]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/main.py:464: UserWarning: Pydantic serializer warnings:
+    PydanticSerializationUnexpectedValue(Expected `none` - serialized value may not be as expected [field_name='parsed_output', input_value=BookSummary(title='Mistbo..., publication_year=2006), input_type=BookSummary])
+    return self.__pydantic_serializer__.to_python(
+
+tests/llm/tools/test_tool_schema.py::test_annotated_aliases_do_not_rename_callable_parameters[field0]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'alias' attribute with value 'other' was provided to the `Field()` function, which has no effect in the context it was used. 'alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+tests/llm/tools/test_tool_schema.py::test_annotated_aliases_do_not_rename_callable_parameters[field1]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'validation_alias' attribute with value 'other' was provided to the `Field()` function, which has no effect in the context it was used. 'validation_alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+tests/llm/tools/test_tool_schema.py::test_annotated_aliases_do_not_rename_callable_parameters[field2]
+  /work/python/.venv/lib/python3.13/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'serialization_alias' attribute with value 'other' was provided to the `Field()` function, which has no effect in the context it was used. 'serialization_alias' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.17-final-0 _______________
+
+Name                                                                                     Stmts   Miss  Cover   Missing
+----------------------------------------------------------------------------------------------------------------------
+mirascope/__init__.py                                                                        6      0   100%
+mirascope/_stubs.py                                                                        108      0   100%
+mirascope/_utils.py                                                                         10      0   100%
+mirascope/llm/__init__.py                                                                   18      0   100%
+mirascope/llm/calls/__init__.py                                                              3      0   100%
+mirascope/llm/calls/calls.py                                                                62      0   100%
+mirascope/llm/calls/decorator.py                                                            43      0   100%
+mirascope/llm/content/__init__.py                                                           18      0   100%
+mirascope/llm/content/audio.py                                                              65      0   100%
+mirascope/llm/content/document.py                                                           68      0   100%
+mirascope/llm/content/image.py                                                              75      0   100%
+mirascope/llm/content/text.py                                                               24      0   100%
+mirascope/llm/content/thought.py                                                            24      0   100%
+mirascope/llm/content/tool_call.py                                                          36      0   100%
+mirascope/llm/content/tool_output.py                                                        20      0   100%
+mirascope/llm/context/__init__.py                                                            3      0   100%
+mirascope/llm/context/_utils.py                                                             25      0   100%
+mirascope/llm/context/context.py                                                             9      0   100%
+mirascope/llm/exceptions.py                                                                135      0   100%
+mirascope/llm/formatting/__init__.py                                                         7      0   100%
+mirascope/llm/formatting/format.py                                                          73      0   100%
+mirascope/llm/formatting/from_call_args.py                                                   1      0   100%
+mirascope/llm/formatting/output_parser.py                                                   20      0   100%
+mirascope/llm/formatting/partial.py                                                         30      0   100%
+mirascope/llm/formatting/primitives.py                                                      24      0   100%
+mirascope/llm/formatting/types.py                                                           10      0   100%
+mirascope/llm/mcp/__init__.py                                                                2      0   100%
+mirascope/llm/mcp/mcp_client.py                                                             48      0   100%
+mirascope/llm/messages/__init__.py                                                           3      0   100%
+mirascope/llm/messages/_utils.py                                                            13      0   100%
+mirascope/llm/messages/message.py                                                           57      0   100%
+mirascope/llm/models/__init__.py                                                             4      0   100%
+mirascope/llm/models/models.py                                                              90      0   100%
+mirascope/llm/models/params.py                                                              17      0   100%
+mirascope/llm/models/thinking_config.py                                                     11      0   100%
+mirascope/llm/prompts/__init__.py                                                            5      0   100%
+mirascope/llm/prompts/_utils.py                                                              9      0   100%
+mirascope/llm/prompts/decorator.py                                                          36      0   100%
+mirascope/llm/prompts/prompts.py                                                           113      0   100%
+mirascope/llm/prompts/protocols.py                                                           9      0   100%
+mirascope/llm/providers/__init__.py                                                         34      0   100%
+mirascope/llm/providers/anthropic/__init__.py                                                4      0   100%
+mirascope/llm/providers/anthropic/_utils/__init__.py                                         5      0   100%
+mirascope/llm/providers/anthropic/_utils/beta_decode.py                                    123      0   100%
+mirascope/llm/providers/anthropic/_utils/beta_encode.py                                    121      0   100%
+mirascope/llm/providers/anthropic/_utils/decode.py                                         137      0   100%
+mirascope/llm/providers/anthropic/_utils/encode.py                                         198      0   100%
+mirascope/llm/providers/anthropic/_utils/errors.py                                           4      0   100%
+mirascope/llm/providers/anthropic/beta_provider.py                                          71      0   100%
+mirascope/llm/providers/anthropic/model_id.py                                                7      0   100%
+mirascope/llm/providers/anthropic/model_info.py                                              5      0   100%
+mirascope/llm/providers/anthropic/provider.py                                              102      0   100%
+mirascope/llm/providers/api_route/__init__.py                                                2      0   100%
+mirascope/llm/providers/api_route/provider.py                                               19      0   100%
+mirascope/llm/providers/atlascloud/__init__.py                                               2      0   100%
+mirascope/llm/providers/atlascloud/provider.py                                              20      0   100%
+mirascope/llm/providers/base/__init__.py                                                     4      0   100%
+mirascope/llm/providers/base/_utils.py                                                     136      0   100%
+mirascope/llm/providers/base/base_provider.py                                              104      0   100%
+mirascope/llm/providers/base/kwargs.py                                                       4      0   100%
+mirascope/llm/providers/cheaperinference/__init__.py                                         2      0   100%
+mirascope/llm/providers/cheaperinference/provider.py                                        19      0   100%
+mirascope/llm/providers/google/__init__.py                                                   3      0   100%
+mirascope/llm/providers/google/_utils/__init__.py                                            5      0   100%
+mirascope/llm/providers/google/_utils/decode.py                                            139      0   100%
+mirascope/llm/providers/google/_utils/encode.py                                            182      0   100%
+mirascope/llm/providers/google/_utils/errors.py                                             20      0   100%
+mirascope/llm/providers/google/model_id.py                                                   7      0   100%
+mirascope/llm/providers/google/model_info.py                                                 5      0   100%
+mirascope/llm/providers/google/provider.py                                                  73      0   100%
+mirascope/llm/providers/minimax/__init__.py                                                  3      0   100%
+mirascope/llm/providers/minimax/model_id.py                                                  7      0   100%
+mirascope/llm/providers/minimax/model_info.py                                                3      0   100%
+mirascope/llm/providers/minimax/provider.py                                                 12      0   100%
+mirascope/llm/providers/mirascope/__init__.py                                                2      0   100%
+mirascope/llm/providers/mirascope/_utils.py                                                 18      0   100%
+mirascope/llm/providers/mirascope/provider.py                                               55      0   100%
+mirascope/llm/providers/model_id.py                                                          7      0   100%
+mirascope/llm/providers/ollama/__init__.py                                                   2      0   100%
+mirascope/llm/providers/ollama/provider.py                                                  18      0   100%
+mirascope/llm/providers/openai/__init__.py                                                   6      0   100%
+mirascope/llm/providers/openai/_utils/__init__.py                                            2      0   100%
+mirascope/llm/providers/openai/_utils/errors.py                                              4      0   100%
+mirascope/llm/providers/openai/completions/__init__.py                                       3      0   100%
+mirascope/llm/providers/openai/completions/_utils/__init__.py                                4      0   100%
+mirascope/llm/providers/openai/completions/_utils/decode.py                                101      0   100%
+mirascope/llm/providers/openai/completions/_utils/encode.py                                179      0   100%
+mirascope/llm/providers/openai/completions/_utils/feature_info.py                           15      0   100%
+mirascope/llm/providers/openai/completions/base_provider.py                                 91      0   100%
+mirascope/llm/providers/openai/completions/provider.py                                      15      0   100%
+mirascope/llm/providers/openai/model_id.py                                                  11      0   100%
+mirascope/llm/providers/openai/model_info.py                                                11      0   100%
+mirascope/llm/providers/openai/provider.py                                                  76      0   100%
+mirascope/llm/providers/openai/responses/__init__.py                                         2      0   100%
+mirascope/llm/providers/openai/responses/_utils/__init__.py                                  4      0   100%
+mirascope/llm/providers/openai/responses/_utils/decode.py                                  131      0   100%
+mirascope/llm/providers/openai/responses/_utils/encode.py                                  160      0   100%
+mirascope/llm/providers/openai/responses/provider.py                                        80      0   100%
+mirascope/llm/providers/openrouter/__init__.py                                               2      0   100%
+mirascope/llm/providers/openrouter/provider.py                                              20      0   100%
+mirascope/llm/providers/provider_id.py                                                       5      0   100%
+mirascope/llm/providers/provider_registry.py                                                99      0   100%
+mirascope/llm/providers/requesty/__init__.py                                                 2      0   100%
+mirascope/llm/providers/requesty/provider.py                                                20      0   100%
+mirascope/llm/providers/together/__init__.py                                                 2      0   100%
+mirascope/llm/providers/together/provider.py                                                11      0   100%
+mirascope/llm/providers/xai/__init__.py                                                      3      0   100%
+mirascope/llm/providers/xai/model_id.py                                                      5      0   100%
+mirascope/llm/providers/xai/model_info.py                                                    2      0   100%
+mirascope/llm/providers/xai/provider.py                                                     17      0   100%
+mirascope/llm/responses/__init__.py                                                         10      0   100%
+mirascope/llm/responses/_utils.py                                                           57      0   100%
+mirascope/llm/responses/base_response.py                                                    40      0   100%
+mirascope/llm/responses/base_stream_response.py                                            325      0   100%
+mirascope/llm/responses/finish_reason.py                                                    12      0   100%
+mirascope/llm/responses/response.py                                                         99      0   100%
+mirascope/llm/responses/root_response.py                                                    80      0   100%
+mirascope/llm/responses/stream_response.py                                                 105      0   100%
+mirascope/llm/responses/streams.py                                                         135      0   100%
+mirascope/llm/responses/usage.py                                                            47      0   100%
+mirascope/llm/retries/__init__.py                                                            9      0   100%
+mirascope/llm/retries/retry_calls.py                                                        34      0   100%
+mirascope/llm/retries/retry_config.py                                                       63      0   100%
+mirascope/llm/retries/retry_decorator.py                                                    42      0   100%
+mirascope/llm/retries/retry_models.py                                                      152      0   100%
+mirascope/llm/retries/retry_prompts.py                                                      51      0   100%
+mirascope/llm/retries/retry_responses.py                                                    78      0   100%
+mirascope/llm/retries/retry_stream_responses.py                                            170      0   100%
+mirascope/llm/retries/utils.py                                                              52      0   100%
+mirascope/llm/tools/__init__.py                                                              9      0   100%
+mirascope/llm/tools/_utils.py                                                                9      0   100%
+mirascope/llm/tools/decorator.py                                                            26      0   100%
+mirascope/llm/tools/protocols.py                                                            23      0   100%
+mirascope/llm/tools/provider_tools.py                                                        4      0   100%
+mirascope/llm/tools/tool_schema.py                                                         124      0   100%
+mirascope/llm/tools/toolkit.py                                                              68      0   100%
+mirascope/llm/tools/tools.py                                                                79      0   100%
+mirascope/llm/tools/types.py                                                                42      0   100%
+mirascope/llm/tools/web_search_tool.py                                                       6      0   100%
+mirascope/llm/types/__init__.py                                                              5      0   100%
+mirascope/llm/types/dataclass.py                                                             2      0   100%
+mirascope/llm/types/jsonable.py                                                              9      0   100%
+mirascope/llm/types/type_vars.py                                                             8      0   100%
+mirascope/ops/__init__.py                                                                   17      0   100%
+mirascope/ops/_internal/__init__.py                                                          0      0   100%
+mirascope/ops/_internal/closure.py                                                         634      0   100%
+mirascope/ops/_internal/configuration.py                                                    30      0   100%
+mirascope/ops/_internal/context.py                                                          28      0   100%
+mirascope/ops/_internal/instrumentation/__init__.py                                          3      0   100%
+mirascope/ops/_internal/instrumentation/llm/__init__.py                                      2      0   100%
+mirascope/ops/_internal/instrumentation/llm/common.py                                      194      0   100%
+mirascope/ops/_internal/instrumentation/llm/cost.py                                         33      0   100%
+mirascope/ops/_internal/instrumentation/llm/encode.py                                       81      0   100%
+mirascope/ops/_internal/instrumentation/llm/gen_ai_types/__init__.py                         6      0   100%
+mirascope/ops/_internal/instrumentation/llm/gen_ai_types/gen_ai_input_messages.py           12      0   100%
+mirascope/ops/_internal/instrumentation/llm/gen_ai_types/gen_ai_output_messages.py          15      0   100%
+mirascope/ops/_internal/instrumentation/llm/gen_ai_types/gen_ai_system_instructions.py       4      0   100%
+mirascope/ops/_internal/instrumentation/llm/gen_ai_types/shared.py                          61      0   100%
+mirascope/ops/_internal/instrumentation/llm/llm.py                                          57      0   100%
+mirascope/ops/_internal/instrumentation/llm/model.py                                       471      0   100%
+mirascope/ops/_internal/instrumentation/llm/response.py                                    158      0   100%
+mirascope/ops/_internal/instrumentation/llm/serialize.py                                    85      0   100%
+mirascope/ops/_internal/instrumentation/providers/__init__.py                                4      0   100%
+mirascope/ops/_internal/instrumentation/providers/anthropic.py                              18      0   100%
+mirascope/ops/_internal/instrumentation/providers/base.py                                   75      0   100%
+mirascope/ops/_internal/instrumentation/providers/google_genai.py                           18      0   100%
+mirascope/ops/_internal/instrumentation/providers/openai.py                                 18      0   100%
+mirascope/ops/_internal/propagation.py                                                      78      0   100%
+mirascope/ops/_internal/protocols.py                                                        42      0   100%
+mirascope/ops/_internal/session.py                                                          38      0   100%
+mirascope/ops/_internal/spans.py                                                            94      0   100%
+mirascope/ops/_internal/traced_calls.py                                                    102      0   100%
+mirascope/ops/_internal/traced_functions.py                                                226      0   100%
+mirascope/ops/_internal/tracing.py                                                          40      0   100%
+mirascope/ops/_internal/types.py                                                             7      0   100%
+mirascope/ops/_internal/utils.py                                                            55      0   100%
+mirascope/ops/_internal/versioned_calls.py                                                 139      0   100%
+mirascope/ops/_internal/versioned_functions.py                                             120      0   100%
+mirascope/ops/_internal/versioning.py                                                       34      0   100%
+mirascope/ops/exceptions.py                                                                  7      0   100%
+----------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                     9082      0   100%
+Coverage XML written to file coverage.xml
+Required test coverage of 100.0% reached. Total coverage: 100.00%
+=========== 2685 passed, 5 skipped, 31 warnings in 405.70s (0:06:45) ===========

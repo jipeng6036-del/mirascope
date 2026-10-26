@@ -1,0 +1,19 @@
+$ bun run typecheck:typescript && bun run typecheck:python && bun run typecheck:website
+$ bun run --cwd typescript typecheck
+$ bunx tsc --noEmit
+$ cd python && uv run pyright .
+<checkout>\python\mirascope\llm\providers\mlx\_utils.py
+  <checkout>\python\mirascope\llm\providers\mlx\_utils.py:6:8 - warning: Import "mlx.core" could not be resolved from source (reportMissingModuleSource)
+<checkout>\python\mirascope\llm\providers\mlx\mlx.py
+  <checkout>\python\mirascope\llm\providers\mlx\mlx.py:10:8 - warning: Import "mlx.core" could not be resolved from source (reportMissingModuleSource)
+  <checkout>\python\mirascope\llm\providers\mlx\mlx.py:11:8 - warning: Import "mlx.nn" could not be resolved from source (reportMissingModuleSource)
+<checkout>\python\mirascope\llm\providers\mlx\provider.py
+  <checkout>\python\mirascope\llm\providers\mlx\provider.py:8:8 - warning: Import "mlx.nn" could not be resolved from source (reportMissingModuleSource)
+<checkout>\python\tests\e2e\mlx_lm_cassette.py
+  <checkout>\python\tests\e2e\mlx_lm_cassette.py:12:8 - warning: Import "mlx.nn" could not be resolved from source (reportMissingModuleSource)
+0 errors, 5 warnings, 0 informations
+WARNING: there is a new pyright version available (v1.1.408 -> v1.1.414).
+Please install the new version or set PYRIGHT_PYTHON_FORCE_VERSION to `latest`
+
+$ bun run --cwd website typecheck
+$ bun x tsc --build ./tsconfig.json

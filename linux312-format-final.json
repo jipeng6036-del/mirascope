@@ -1,0 +1,21 @@
+{
+  "name": "linux312-format-final",
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work/python",
+    "resume-20261026-ai-mirascope312",
+    "uv",
+    "run",
+    "--no-sync",
+    "ruff",
+    "format",
+    "--check",
+    "."
+  ],
+  "cwd": "<checkout>",
+  "exit_code": 0,
+  "elapsed": 0.30060267448425293,
+  "observed_at": "2026-10-26T17:45:02.274123+00:00"
+}

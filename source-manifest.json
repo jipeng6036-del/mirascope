@@ -1,0 +1,12 @@
+{
+  "base": "27631eb4e1a7da4736e9ba1c9f9e5a6b42b77c94",
+  "base_git_blob_matches": 1845,
+  "overlay_sha256": {
+    "python/mirascope/llm/retries/utils.py": "137bc64c07b4b13719781be606aad25b528d619b80b1333c603843d357104249",
+    "python/mirascope/llm/retries/retry_models.py": "181330db96064fc607351c1d39b1b9414eab0309810dfc67233a695e09e2f4a8",
+    "python/mirascope/llm/retries/retry_stream_responses.py": "d2a78daf457ecacfc874f3639ad036c6333eebee16ec47286e676f4c1c4363e7",
+    "python/tests/llm/retries/mock_provider.py": "c43af7b2be2624d8042100ba60ba9acd48f8902175f026bbf5820d9e33eb198c",
+    "python/tests/llm/retries/test_stream_creation.py": "dcf5631e60286e59e27d9c6e35c97d244b35b48d10a1595f00fb9a26406c7619"
+  },
+  "tar_sha256": "5e5173837d0121dbaad5a5c9a38c4a16950f04dde7ea1c173f53c57015b4db8f"
+}

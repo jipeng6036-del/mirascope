@@ -1,0 +1,17 @@
+{
+  "name": "linux312-lock-final",
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work/python",
+    "resume-20261026-ai-mirascope312",
+    "uv",
+    "lock",
+    "--check"
+  ],
+  "cwd": "<checkout>",
+  "exit_code": 0,
+  "elapsed": 0.3782062530517578,
+  "observed_at": "2026-10-26T17:45:01.629720+00:00"
+}

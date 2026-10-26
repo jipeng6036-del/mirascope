@@ -1,0 +1,10 @@
+{
+  "container": "resume-20261026-ai-mirascope312",
+  "started": 1793036209.7769792,
+  "source_files": 1846,
+  "test_network": "disconnected; VCR record none",
+  "source_verification": "{\"matched\": 1846, \"bad\": []}\n",
+  "exit_code": 0,
+  "elapsed": 405.07420229911804,
+  "tail": "  0   100%\nmirascope/ops/_internal/traced_functions.py                                                226      0   100%\nmirascope/ops/_internal/tracing.py                                                          40      0   100%\nmirascope/ops/_internal/types.py                                                             7      0   100%\nmirascope/ops/_internal/utils.py                                                            55      0   100%\nmirascope/ops/_internal/versioned_calls.py                                                 139      0   100%\nmirascope/ops/_internal/versioned_functions.py                                             120      0   100%\nmirascope/ops/_internal/versioning.py                                                       34      0   100%\nmirascope/ops/exceptions.py                                                                  7      0   100%\n----------------------------------------------------------------------------------------------------------------------\nTOTAL                                                                                     9082      0   100%\nCoverage XML written to file coverage.xml\nRequired test coverage of 100.0% reached. Total coverage: 100.00%\n=========== 2685 passed, 5 skipped, 31 warnings in 383.88s (0:06:23) ===========\n"
+}

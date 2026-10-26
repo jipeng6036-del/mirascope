@@ -1,0 +1,57 @@
+{
+  "final_diff_scope": "Five Python files plus two-line reliability MDX paragraph required by the contributing guide.",
+  "root_typecheck": {
+    "command": "bun run typecheck",
+    "exit_code": 0,
+    "scope": "Actual root passthrough: TypeScript tsc, Python Pyright, website tsc all executed.",
+    "python_warnings": "0 errors, 5 pre-existing MLX source resolution warnings on Windows and Linux."
+  },
+  "stale_generic_checklist_names": {
+    "root_lint:oxlint": {
+      "command": "bun run lint:oxlint",
+      "exit_code": 1,
+      "output": "Script not found; root package defines lint:python/typescript/website instead."
+    },
+    "root_test:coverage": {
+      "command": "bun run test:coverage",
+      "exit_code": 1,
+      "output": "Script not found; root package defines coverage:python instead."
+    },
+    "interpretation": "Root AGENTS quick-reference names belong to individual JS packages. The actual CI workflow changes filter is authoritative for package-specific jobs; no claim that unrun TypeScript/website lint or runtime suites passed."
+  },
+  "actual_ci_filters": {
+    "source": ".github/workflows/ci.yml at 27631eb4e1a7da4736e9ba1c9f9e5a6b42b77c94",
+    "python": true,
+    "typescript": false,
+    "website": false,
+    "reason": "Five changed files under python/ select Python; content/docs/learn/llm/reliability.mdx selects no website job. Neither typescript/**, website/** nor workflow is changed.",
+    "required_python_gates": "uv lock --check; uv sync --all-extras --dev; regenerate_examples.ts + unchanged tracked examples; datamodel-codegen + unchanged tracked output; validate_extra_imports.sh; Ruff check/format; Pyright; Python3.10\u20133.13 full pytest+100% coverage; codespell.",
+    "python_gates_result": "PASS; canonical source and full matrix are bound by final-source-binding.json, linux*-raw-result.json and final delivery manifest.",
+    "gen_ai_output_note": "Upstream official codegen output directory is untracked in the baseline. The exact codegen command exited0 and no tracked source changed; not presented as a comparison against tracked generated modules."
+  },
+  "docs_formatter": {
+    "base_matches_oxfmt": false,
+    "candidate_matches_oxfmt": false,
+    "identical_preexisting_formatting_edits": true,
+    "added_paragraph_preserved_by_formatter": true,
+    "required_by_actual_CI": false,
+    "explanation": "Current CI website filter is website/** or workflow path. content/docs MDX alone selects no website/format job; avoid unrelated whole-file formatting."
+  },
+  "superseded_evidence": [
+    "linux310-full.log",
+    "linux311-full.log",
+    "linux312-full.log",
+    "linux313-full.log",
+    "linux310-result.json",
+    "linux311-result.json",
+    "linux313-result.json",
+    "runtime-baseline-final.json"
+  ],
+  "superseded_reason": "Initial git archive inherited Windows CRLF conversion, including binary PDF fixtures. Canonical git-blob LF archives, source verification, raw full matrix and raw baseline runtime supersede those results.",
+  "docs_validation": {
+    "MDX_compile": "PASS",
+    "codespell": "PASS",
+    "links_and_snippets": "No added or changed references",
+    "detail": "docs-scope-final.json"
+  }
+}

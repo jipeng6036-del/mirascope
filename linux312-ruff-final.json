@@ -1,0 +1,20 @@
+{
+  "name": "linux312-ruff-final",
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work/python",
+    "resume-20261026-ai-mirascope312",
+    "uv",
+    "run",
+    "--no-sync",
+    "ruff",
+    "check",
+    "."
+  ],
+  "cwd": "<checkout>",
+  "exit_code": 0,
+  "elapsed": 0.34236621856689453,
+  "observed_at": "2026-10-26T17:45:01.972801+00:00"
+}

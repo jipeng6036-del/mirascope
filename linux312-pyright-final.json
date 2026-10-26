@@ -1,0 +1,19 @@
+{
+  "name": "linux312-pyright-final",
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work/python",
+    "resume-20261026-ai-mirascope312",
+    "uv",
+    "run",
+    "--no-sync",
+    "pyright",
+    "."
+  ],
+  "cwd": "<checkout>",
+  "exit_code": 0,
+  "elapsed": 43.18864393234253,
+  "observed_at": "2026-10-26T17:45:45.531534+00:00"
+}

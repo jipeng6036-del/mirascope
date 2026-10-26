@@ -1,0 +1,278 @@
+{
+  "expect": "fixed",
+  "package": "/tmp/canonical-installed/mirascope",
+  "versions": {
+    "mirascope": "2.8.2",
+    "openai": "2.16.0",
+    "httpx": "0.28.1",
+    "pydantic": "2.12.5"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 01:17:55) [GCC 14.2.0]",
+  "source_sha256": {
+    "llm/retries/retry_models.py": "181330db96064fc607351c1d39b1b9414eab0309810dfc67233a695e09e2f4a8",
+    "llm/retries/retry_stream_responses.py": "d2a78daf457ecacfc874f3639ad036c6333eebee16ec47286e676f4c1c4363e7",
+    "llm/retries/utils.py": "137bc64c07b4b13719781be606aad25b528d619b80b1333c603843d357104249"
+  },
+  "results": [
+    {
+      "mode": "sync",
+      "scenario": "success",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "sync",
+      "scenario": "429",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [
+        "RateLimitError"
+      ],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "sync",
+      "scenario": "disconnect",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [
+        "ConnectionError"
+      ],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "sync",
+      "scenario": "timeout",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [
+        "TimeoutError"
+      ],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "sync",
+      "scenario": "exhaust",
+      "sdk_max_retries": 0,
+      "error": "RetriesExhausted",
+      "failures": [
+        "RateLimitError",
+        "RateLimitError",
+        "RateLimitError"
+      ],
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "sync",
+      "scenario": "401",
+      "sdk_max_retries": 0,
+      "error": "AuthenticationError",
+      "failures": [],
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "async",
+      "scenario": "success",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "async",
+      "scenario": "429",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [
+        "RateLimitError"
+      ],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "async",
+      "scenario": "disconnect",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [
+        "ConnectionError"
+      ],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "async",
+      "scenario": "timeout",
+      "sdk_max_retries": 0,
+      "text": "ok\n",
+      "failures": [
+        "TimeoutError"
+      ],
+      "error": null,
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "async",
+      "scenario": "exhaust",
+      "sdk_max_retries": 0,
+      "error": "RetriesExhausted",
+      "failures": [
+        "RateLimitError",
+        "RateLimitError",
+        "RateLimitError"
+      ],
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        },
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    },
+    {
+      "mode": "async",
+      "scenario": "401",
+      "sdk_max_retries": 0,
+      "error": "AuthenticationError",
+      "failures": [],
+      "requests": [
+        {
+          "path": "/v1/responses",
+          "model": "test-model",
+          "stream": true
+        }
+      ],
+      "expected_behavior_verified": true
+    }
+  ],
+  "all_expected": true,
+  "boundary": "Real public RetryModel + real SDK + actual loopback HTTP/SSE; peer responses synthetic, no external service or inference"
+}

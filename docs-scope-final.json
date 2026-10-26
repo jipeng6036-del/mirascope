@@ -1,0 +1,20 @@
+{
+  "head": "52e18284e3e1cf7312f72ebfeb969a2eadc811ce",
+  "docs_required_by": "content/docs/contributing.mdx: Update documentation if change affects user-facing behavior",
+  "restored_diff": "content/docs/learn/llm/reliability.mdx: two added lines only",
+  "MDX_compile": "PASS: @mdx-js/mdx compile with jsx:true,format:mdx",
+  "codespell": "PASS: bun run codespell",
+  "genuine_docs_commit_hooks": "PASS; no content/docs patterns in lint-staged, as actual output records",
+  "new_links_or_CodeExample_references": 0,
+  "all_existing_links_and_snippet_references_unchanged": true,
+  "formatter": {
+    "base_matches_oxfmt": false,
+    "candidate_matches_oxfmt": false,
+    "identical_preexisting_formatting_edits": true,
+    "added_paragraph_preserved_by_formatter": true,
+    "required_by_actual_CI": false,
+    "explanation": "Current CI website filter is website/** or workflow path. content/docs MDX alone selects no website/format job; avoid unrelated whole-file formatting."
+  },
+  "python_source_and_test_blobs_unchanged": true,
+  "wheel_version_unchanged": "2.8.2"
+}
